@@ -1,6 +1,6 @@
 # Step 3 — Starter Kit (Training)
 
-**Predict-It** › **Starter Kit** · `03_starter_kit/`
+**Predict-It** › **Starter Kit** · `starter_kit/`
 
 | | |
 |--------|---------------|
@@ -25,7 +25,7 @@ This step trains a **TF‑IDF + Random Forest** pipeline with **GridSearchCV**, 
 | Step | Vayu service / folder | Requirements |
 |------|------------------------|--------------|
 | 0 | `00_vayu_workspaces/` | Active Python environment |
-| 1 | `01_dataset/` | `news.csv` and `validation.csv` available locally |
+| 1 | `dataset/` | `news.csv` and `validation.csv` available locally |
 | 2 | `02_vayu_mlflow/` | MLflow deployment **Ready** (optional) |
 
 Install dependencies:
@@ -43,7 +43,7 @@ pip install -r requirements.txt
 
 ## Quick Start
 
-1. **Open the training notebook:** `03_starter_kit/train.ipynb` in your Vayu AI Studio workspace, then select the kernel:
+1. **Open the training notebook:** `starter_kit/train.ipynb` in your Vayu AI Studio workspace, then select the kernel:
 
    1. Open **Select Kernel** and choose **Python Environments**.
 
@@ -73,7 +73,7 @@ pip install -r requirements.txt
 
 | Stage | Output |
 |-------|--------|
-| Load data | `../01_dataset/news.csv`, `../01_dataset/validation.csv` |
+| Load data | `../dataset/news.csv`, `../dataset/validation.csv` |
 | Label encoding | Five categories → integer codes |
 | Grid search | 24 TF‑IDF + Random Forest combos (3-fold CV) |
 | Holdout report | 20% stratified split from `news.csv` |

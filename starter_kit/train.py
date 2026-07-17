@@ -58,7 +58,7 @@ def generate_flight_data(n_samples=5000):
 
 def main():
     df = generate_flight_data(5000)
-    dataset_dir = os.path.join(PROJECT_ROOT, "01_dataset")
+    dataset_dir = os.path.join(PROJECT_ROOT, "dataset")
     os.makedirs(dataset_dir, exist_ok=True)
     csv_path = os.path.join(dataset_dir, "flight_data.csv")
     df.to_csv(csv_path, index=False)
@@ -111,7 +111,7 @@ def main():
     print("="*40 + "\n")
 
     # Save Model for local inference
-    output_dir = os.path.join(PROJECT_ROOT, "03_starter_kit")
+    output_dir = os.path.join(PROJECT_ROOT, "starter_kit")
     os.makedirs(output_dir, exist_ok=True)
     model_path = os.path.join(output_dir, "model.joblib")
     print(f"[PROCESS] Serializing and saving best estimator to: {model_path}")

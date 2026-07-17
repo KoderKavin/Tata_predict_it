@@ -2,7 +2,7 @@ services:
   - type: web
     name: predict-it
     env: docker
-    dockerfilePath: ./06_build_app/Dockerfile
+    dockerfilePath: ./build_app/Dockerfile
     autoDeploy: true
     envVars:
       - key: PORT

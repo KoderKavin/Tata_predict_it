@@ -1,6 +1,6 @@
 # Step 1 — Vayu Object Storage (Dataset)
 
-**Predict-It** › **Vayu Object Storage** · `01_dataset/`
+**Predict-It** › **Vayu Object Storage** · `dataset/`
 
 | | |
 |---|---|
@@ -47,11 +47,11 @@ This folder holds BBC-style news CSVs for training and batch inference. If `news
 
 > **Tip:** `validation.csv` has **no** `Category` column — use it only for final predictions, not tuning metrics.
 
-`03_starter_kit/train.ipynb` reads:
+`starter_kit/train.ipynb` reads:
 
 ```python
-df_labeled = pd.read_csv("../01_dataset/news.csv")
-df_inference = pd.read_csv("../01_dataset/validation.csv")
+df_labeled = pd.read_csv("../dataset/news.csv")
+df_inference = pd.read_csv("../dataset/validation.csv")
 ```
 
 ---
